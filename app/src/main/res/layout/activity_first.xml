@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lifeistech.android.techdragon.FirstActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/lobby">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:id="@+id/playerImage"
+                android:src="@drawable/falcon"
+                android:layout_gravity="center" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#000000">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+<!--TODO 書かせる-->
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="プレーヤー名"-->
+                    <!--android:id="@+id/playerText"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:textColor="#ffffff" />-->
+
+                <!--<EditText-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:id="@+id/playerName"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:background="#FFFFFF"-->
+                    <!--android:layout_marginLeft="30dp"-->
+                    <!--android:layout_marginRight="30dp" />-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="プレイヤー名"
+                    android:id="@+id/playerText"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#FFFFFF" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/playerName"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="冒険に行く"
+                    android:id="@+id/start"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button"
+                    android:nestedScrollingEnabled="false"
+                    android:onClick="start" />
+            </FrameLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
